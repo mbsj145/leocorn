@@ -30,11 +30,11 @@ class Footer extends Component {
             </div>
             <div className="col-lg-6">
               <div className="socials">
-              <img src={require("../../static/images/landing-leocorn/1-fot1.png")} alt="" />
-              <img src={require("../../static/images/landing-leocorn/2-fot-1.png")} alt="" />
-              <img src={require("../../static/images/landing-leocorn/3-fot-1.png")} alt="" />
-              <img src={require("../../static/images/landing-leocorn/4-fot-1.png")} alt="" />
-              <img src={require("../../static/images/landing-leocorn/5-fot-1.png")} alt="" />
+              <Link className='linkss' to='#'><img src={require("../../static/images/landing-leocorn/1-fot1.png")} alt="" /></Link>
+              <Link className='linkss' to='#'><img src={require("../../static/images/landing-leocorn/2-fot-1.png")} alt="" /></Link>
+              <Link className='linkss' to='#'><img src={require("../../static/images/landing-leocorn/3-fot-1.png")} alt="" /></Link>
+              <Link className='linkss' to='#'><img src={require("../../static/images/landing-leocorn/4-fot-1.png")} alt="" /></Link>
+              <Link className='linkss' to='#'><img src={require("../../static/images/landing-leocorn/5-fot-1.png")} alt="" /></Link>
               </div>
             </div>
           </div>
