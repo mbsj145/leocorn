@@ -1,0 +1,81 @@
+import EventBus from 'eventing-bus';
+import { Link } from 'react-router-dom';
+import React, { Component } from 'react';
+import { Modal, ModalHeader, ModalBody, Button } from "reactstrap";
+import { HashLink } from 'react-router-hash-link';
+import { connect } from "react-redux";
+import MuiPhoneInput from 'material-ui-phone-number';
+import Autocomplete from '@material-ui/lab/Autocomplete';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator';
+
+import './index.css';
+
+
+import { web3 } from '../../store/web3';
+import { message, networkId, explorer } from '../../store/config';
+
+import { } from "../../store/actions/Auth";
+
+class Navbar extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+
+        };
+    }
+
+    render() {
+        let { } = this.state;
+        let { } = this.props;
+        return (
+            <div className="main-header">
+                <nav className="navbar navbar-expand-lg">
+                    <div className="container-fluid">
+                        <Link className="navbar-brand"  to="/"><img src={require("../../static/images/landing-leocorn/logo.png")} alt="" /></Link>
+                        <button className="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <div class="hamburger">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
+                        </button>
+                        <div className="collapse navbar-collapse nav-links" id="navbarSupportedContent">
+                            <ul className="navbar-nav ml-auto">
+                                <li className="nav-item active">
+                                    {/* <Link className="nav-link  pr-lg-4" href="/poolss">Pool  <span className="sr-only">(current)</span></Link> */}
+                                    <Link className='nav-link pr-lg-3' to='/pools'>Pools</Link>
+                                </li>
+                            </ul>
+
+                            <div className="button-head">
+                                <button className="button-one" type="button">Connect Wallet</button>
+                            </div>
+
+
+
+
+                            {/* ------------------Network Error MODAL----------------- */}
+
+                         
+
+
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        );
+    }
+}
+
+const mapDispatchToProps = {};
+
+const mapStateToProps = ({ Auth }) => {
+    let { } = Auth;
+    return {}
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Navbar);
