@@ -53,7 +53,7 @@ class Navbar extends Component {
                                 <button className="button-one" type="button">Connect Wallet</button>
                             </div>
                             {/* ------------------Connect Wallet MODAL----------------- */}
-                            <Modal isOpen={true} toggle={this.props.toggleBuyWallet} className="register-modal connect-modal">
+                            <Modal isOpen={false} toggle={this.props.toggleBuyWallet} className="register-modal connect-modal">
                                 <ModalHeader toggle={this.props.toggleBuyWallet}>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
