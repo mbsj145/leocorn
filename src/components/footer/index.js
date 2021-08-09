@@ -47,12 +47,8 @@ class Footer extends Component {
             <p className="main-termss">© 2021 LEOCORN, All Right Reserved</p>
           <p className="main-term">Term & Conditions</p>
             </div>
-          
           </div>
-         
-        </div>
-               
-                    
+        </div>          
             </footer>
         );
     }

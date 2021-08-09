@@ -8,7 +8,6 @@ import MuiPhoneInput from 'material-ui-phone-number';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator';
-
 import './index.css';
 
 
@@ -32,7 +31,7 @@ class Navbar extends Component {
             <div className="main-header">
                 <nav className="navbar navbar-expand-lg">
                     <div className="container-fluid">
-                        <Link className="navbar-brand"  to="/"><img src={require("../../static/images/landing-leocorn/logo.png")} alt="" /></Link>
+                        <Link className="navbar-brand" to="/"><img src={require("../../static/images/landing-leocorn/logo.png")} alt="" /></Link>
                         <button className="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                             aria-label="Toggle navigation">
@@ -53,16 +52,28 @@ class Navbar extends Component {
                             <div className="button-head">
                                 <button className="button-one" type="button">Connect Wallet</button>
                             </div>
-
-
-
-
-                            {/* ------------------Network Error MODAL----------------- */}
-
-                         
-
-
-
+                            {/* ------------------Connect Wallet MODAL----------------- */}
+                            <Modal isOpen={true} toggle={this.props.toggleBuyWallet} className="register-modal connect-modal">
+                                <ModalHeader toggle={this.props.toggleBuyWallet}>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </ModalHeader>
+                                <ModalBody className="modal-body">
+                                    <div className="container main-divs">
+                                        <h1>Select Wallet Provider</h1>
+                                        <div className="meta-mask">
+                                            <Link className="main-link-meta" href="#"><img src={require("../../static/images/landing-leocorn/Group 16.png")} alt="" /></Link>
+                                        </div>
+                                        <div className="scan-wallet">
+                                            <Link className="main-link-meta" href="#"><img src={require("../../static/images/landing-leocorn/sacn-wallet.png")} alt="" /></Link>
+                                            <h1>WalletConnect</h1>
+                                            <Link className="link-scan" href="#"><p>Scan with WalletConnect to Connect</p></Link>
+                                        </div>
+                                        <p className="main-term">By connecting, I accept LEOCORN's   <Link className="link-scan" href="#">Terms of Service</Link></p>
+                                    </div>
+                                </ModalBody>
+                            </Modal>
                         </div>
                     </div>
                 </nav>

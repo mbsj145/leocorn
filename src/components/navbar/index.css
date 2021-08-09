@@ -87,10 +87,72 @@ border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   transform: translateY(8px) rotate(45deg);
 }
 
-
 .navbar .navbar-toggler .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
+
+/* connect modal  */
+
+.connect-modal .main-divs{
+  text-align: center;
+}
+.connect-modal .main-divs h1{
+  font-family: 'poppins';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #00D1FF;
+}
+
+.connect-modal .main-divs .meta-mask{
+  background-color: #1E1D26;
+  padding: 36px 0px 20px;
+  margin: 50px auto;
+  border-radius: 15px;
+}
+
+
+.connect-modal .main-divs .scan-wallet h1{
+  font-family: 'roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 24px;
+}
+
+.connect-modal .main-divs .scan-wallet .link-scan p{
+  text-decoration: none;
+  font-family: 'roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #C4C4C480;
+  padding-top: 4px;
+}
+
+.connect-modal .main-divs .main-term{
+  font-family: 'roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 16px;
+  color: #BDBDD5;
+  padding-top: 60px;
+}
+
+.connect-modal .main-divs .main-term a{
+text-decoration: none;
+color: #00D1FF;
+}
+
+
 @media(max-width: 1680px){
   .navbar .nav-link{
     font-size: 16px;
@@ -116,9 +178,6 @@ border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   .navbar .nav-link:after{
     left: -2px;
   }
-  
-  
-
 }
 
 @media(max-width: 1024px)
@@ -135,10 +194,7 @@ border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 @media(max-width: 991px){
-  .navbar .nav-link:after{
-    display: none;
-
-  }
+.navbar .nav-link:after{display: none;}
 .navbar .button-head button {width: 104px;height: 40px;font-weight: 400;}
 .navbar .nav-link {font-size: 12px;}
 .landing-nft .main-header{padding: 0 2%;}
@@ -155,13 +211,35 @@ border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   width: 5%;
 }
 }
+@media(max-width: 600px){
+  .connect-modal .main-divs h1{
+    font-size: 24px;
+  }
+  .connect-modal .main-divs .meta-mask{
+    padding: 20px 0px 20px;
+    margin: 14px auto;
+  
+  }
+  .connect-modal .main-divs .main-term{
+    padding-top: 14px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
 
 @media(max-width: 576px){
 .navbar .navbar-brand img{width: 144px;}
 .landing-nft .textheader-main .header-image-logo .socials-banner{width: 50px;height: 50px;}
 .landing-nft .textheader-main h2{padding-top: 32px;}
 }
-
+@media(max-width: 400px){
+  .connect-modal .main-divs h1 {
+    font-size: 20px;
+  }
+  .connect-modal .main-divs .scan-wallet h1{
+    font-size: 20px;
+  }
+}
 @media(min-width: 320px) and (max-width: 425px){
 .navbar .button-head{padding-right: 0px;}
 .navbar-nav .nav-link{padding-right: 0px!important;}
@@ -169,6 +247,12 @@ border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 
 @media(max-width: 360px){
 .landing-nft .textheader-main h2 {font-size: 30px;}
+.connect-modal .main-divs .meta-mask .main-link-meta img{
+  width: 220px;
+}
+.connect-modal .main-divs h1 {
+  font-size: 18px;
+}
 }
 
 @media(max-width: 991px){

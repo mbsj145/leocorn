@@ -894,66 +894,6 @@ text-align: center;
 }
 
 
-/* connect modal  */
-
-.connect-modal .main-divs{
-  text-align: center;
-}
-.connect-modal .main-divs h1{
-  font-family: 'poppins';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 37px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #00D1FF;
-}
-
-.connect-modal .main-divs .meta-mask{
-  background-color: #1E1D26;
-  padding: 36px 0px 20px;
-  margin: 50px auto;
-  border-radius: 15px;
-}
-
-
-.connect-modal .main-divs .scan-wallet h1{
-  font-family: 'roboto';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  color: #ffffff;
-  padding-top: 24px;
-}
-
-.connect-modal .main-divs .scan-wallet .link-scan p{
-  text-decoration: none;
-  font-family: 'roboto';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  color: #C4C4C480;
-  padding-top: 4px;
-}
-
-.connect-modal .main-divs .main-term{
-  font-family: 'roboto';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 16px;
-  color: #BDBDD5;
-  padding-top: 60px;
-}
-
-.connect-modal .main-divs .main-term a{
-text-decoration: none;
-color: #00D1FF;
-}
 
 
 @media(max-width: 1680px){
@@ -1175,30 +1115,13 @@ color: #00D1FF;
     width: 65%;
   }
  
-.connect-modal .main-divs h1{
-  font-size: 24px;
-}
-.connect-modal .main-divs .meta-mask{
-  padding: 20px 0px 20px;
-  margin: 14px auto;
 
-}
-.connect-modal .main-divs .main-term{
-  padding-top: 14px;
-  font-size: 16px;
-  line-height: 22px;
-}
 
 }
 
 @media(max-width: 400px){
  
-.connect-modal .main-divs h1 {
-  font-size: 20px;
-}
-.connect-modal .main-divs .scan-wallet h1{
-  font-size: 20px;
-}
+
 
 }
 

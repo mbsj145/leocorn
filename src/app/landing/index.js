@@ -495,27 +495,7 @@ class Landing extends Component {
         <Footer />
 
 
-        <Modal isOpen={false} toggle={this.props.toggleBuyWallet} className="register-modal connect-modal">
-          <ModalHeader toggle={this.props.toggleBuyWallet}>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </ModalHeader>
-          <ModalBody className="modal-body">
-            <div className="container main-divs">
-              <h1>Select Wallet Provider</h1>
-              <div className="meta-mask">
-              <Link className="main-link-meta" href="#"><img src={require("../../static/images/landing-leocorn/Group 16.png")} alt="" /></Link>
-              </div>
-              <div className="scan-wallet">
-              <Link className="main-link-meta" href="#"><img src={require("../../static/images/landing-leocorn/sacn-wallet.png")} alt="" /></Link>
-              <h1>WalletConnect</h1>
-              <Link className="link-scan" href="#"><p>Scan with WalletConnect to Connect</p></Link>
-              </div>
-              <p className="main-term">By connecting, I accept LEOCORN's   <Link className="link-scan" href="#">Terms of Service</Link></p>
-            </div>
-          </ModalBody>
-        </Modal>
+      
     
       </div>
     );
