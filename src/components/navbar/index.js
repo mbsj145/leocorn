@@ -20,10 +20,36 @@ class Navbar extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            isWallet:false,
+            Address:null
         };
     }
+    
+ connectWallet = async () => {
 
+        if (typeof window.ethereum === 'undefined') {
+            this.setState({ isWallet:true })
+            return;
+        }
+
+        web3.eth.net.getId(async (err, netId) => {
+            if (!netId) {
+                this.setState({ networkError: true });
+                this.setState({isWallet:false})
+                return;
+            }
+    
+         
+            let address = (await web3.currentProvider.enable())[0];
+            this.setState({Address:address})
+        });
+    };
+
+
+    SetWallet=()=>{
+        this.setState({ isWallet:false })
+    }
+    
     render() {
         let { } = this.state;
         let { } = this.props;
@@ -50,11 +76,14 @@ class Navbar extends Component {
                             </ul>
 
                             <div className="button-head">
-                                <button className="button-one" type="button">Connect Wallet</button>
+                                {this.state.Address?
+                                <button className="button-one" type="button">{this.state.Address?.substring(0, 9) + '.....'}</button>:
+                                <button className="button-one" type="button" onClick={this.connectWallet}>Connect Wallet</button>
+                                }
                             </div>
                             {/* ------------------Connect Wallet MODAL----------------- */}
-                            <Modal isOpen={false} toggle={this.props.toggleBuyWallet} className="register-modal connect-modal">
-                                <ModalHeader toggle={this.props.toggleBuyWallet}>
+                            <Modal isOpen={this.state.isWallet} toggle={()=>this.SetWallet()} className="register-modal connect-modal">
+                                <ModalHeader toggle={()=>this.SetWallet()}>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
